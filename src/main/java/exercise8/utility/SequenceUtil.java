@@ -1,7 +1,7 @@
 package exercise8.utility;
 
 
-public class ArrayInterleaver {
+public class SequenceUtil {
 
   //  This function takes two arrays and mixes them like this:
   //  [1, 2, 3] and [6, 7, 8] becomes [1, 6, 2, 7, 3, 8]

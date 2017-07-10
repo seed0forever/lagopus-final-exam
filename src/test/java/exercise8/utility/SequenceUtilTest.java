@@ -4,7 +4,7 @@ import static org.junit.Assert.assertArrayEquals;
 
 import org.junit.Test;
 
-public class ArrayInterleaverTest {
+public class SequenceUtilTest {
 
   public static final int[] INPUT_1 = new int[]{1, 7, 9, -5};
   public static final int[] INPUT_2 = new int[]{2, 6, 0, -12};
@@ -17,16 +17,16 @@ public class ArrayInterleaverTest {
 
   @Test
   public void interleave_withEqualLengthInputs() throws Exception {
-    assertArrayEquals(RESULT_OF_1_AND_2, ArrayInterleaver.interleave(INPUT_1, INPUT_2));
+    assertArrayEquals(RESULT_OF_1_AND_2, SequenceUtil.interleave(INPUT_1, INPUT_2));
   }
 
   @Test
   public void interleave_withDifferentLengthInputs() throws Exception {
-    assertArrayEquals(RESULT_OF_1_AND_3, ArrayInterleaver.interleave(INPUT_1, INPUT_3));
+    assertArrayEquals(RESULT_OF_1_AND_3, SequenceUtil.interleave(INPUT_1, INPUT_3));
   }
 
   @Test
   public void interleave_withEmptyInputs() throws Exception {
-    assertArrayEquals(INPUT_EMPTY, ArrayInterleaver.interleave(INPUT_EMPTY, INPUT_EMPTY));
+    assertArrayEquals(INPUT_EMPTY, SequenceUtil.interleave(INPUT_EMPTY, INPUT_EMPTY));
   }
 }
