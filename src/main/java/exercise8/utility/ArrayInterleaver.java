@@ -1,12 +1,10 @@
 package exercise8.utility;
 
 
-/*
-This function takes two arrays and mixes them like this:
-[1, 2, 3] and [6, 7, 8] becomes [1, 6, 2, 7, 3, 8]
-*/
 public class ArrayInterleaver {
 
+  //  This function takes two arrays and mixes them like this:
+  //  [1, 2, 3] and [6, 7, 8] becomes [1, 6, 2, 7, 3, 8]
   public static int[] interleave(int[] numbers1, int[] numbers2) {
     int shorterInputLength =
         (numbers1.length < numbers2.length) ? numbers1.length : numbers2.length;
