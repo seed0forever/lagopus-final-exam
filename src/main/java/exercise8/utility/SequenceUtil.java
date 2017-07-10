@@ -5,6 +5,10 @@ public class SequenceUtil {
 
   //  This function takes two arrays and mixes them like this:
   //  [1, 2, 3] and [6, 7, 8] becomes [1, 6, 2, 7, 3, 8]
+  //
+  // In the current implementation,
+  // it only continues the interleaving
+  // while both inputs have more elements
   public static int[] interleave(int[] sequence1, int[] sequence2) {
 
     int shorterInputLength =
